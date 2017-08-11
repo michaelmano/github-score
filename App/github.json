@@ -1,0 +1,1381 @@
+[
+	{
+	  "id": "6438587074",
+	  "type": "CreateEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"ref": "feature/dashboard",
+		"ref_type": "branch",
+		"master_branch": "master",
+		"description": null,
+		"pusher_type": "user"
+	  },
+	  "public": true,
+	  "created_at": "2017-08-11T05:12:12Z"
+	},
+	{
+	  "id": "6438124151",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"push_id": 1915388710,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/develop",
+		"head": "259d876cb3e09d175a264acd2d6c7378ebe9b854",
+		"before": "f420ee61fd4068b946699df099f0736f578ce376",
+		"commits": [
+		  {
+			"sha": "259d876cb3e09d175a264acd2d6c7378ebe9b854",
+			"author": {
+			  "email": "michael.mano26@gmail.com",
+			  "name": "Michael Mano"
+			},
+			"message": "Multiple changes: usernames, roles and permissions.\nAdds username to the user model.\nAllows the user to log in with username or email.\nSets up roles and permissions.\nSets up seeders and model factories.\nCreates an admin dashboard to which only users with the permission use_dashboard can view.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/259d876cb3e09d175a264acd2d6c7378ebe9b854"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-11T02:26:43Z"
+	},
+	{
+	  "id": "6437623962",
+	  "type": "IssueCommentEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 35483749,
+		"name": "mrsum/webpack-svgstore-plugin",
+		"url": "https://api.github.com/repos/mrsum/webpack-svgstore-plugin"
+	  },
+	  "payload": {
+		"action": "created",
+		"issue": {
+		  "url": "https://api.github.com/repos/mrsum/webpack-svgstore-plugin/issues/148",
+		  "repository_url": "https://api.github.com/repos/mrsum/webpack-svgstore-plugin",
+		  "labels_url": "https://api.github.com/repos/mrsum/webpack-svgstore-plugin/issues/148/labels{/name}",
+		  "comments_url": "https://api.github.com/repos/mrsum/webpack-svgstore-plugin/issues/148/comments",
+		  "events_url": "https://api.github.com/repos/mrsum/webpack-svgstore-plugin/issues/148/events",
+		  "html_url": "https://github.com/mrsum/webpack-svgstore-plugin/issues/148",
+		  "id": 246625286,
+		  "number": 148,
+		  "title": "addAttributesToSVGElement not working.",
+		  "user": {
+			"login": "michaelmano",
+			"id": 8263631,
+			"avatar_url": "https://avatars2.githubusercontent.com/u/8263631?v=4",
+			"gravatar_id": "",
+			"url": "https://api.github.com/users/michaelmano",
+			"html_url": "https://github.com/michaelmano",
+			"followers_url": "https://api.github.com/users/michaelmano/followers",
+			"following_url": "https://api.github.com/users/michaelmano/following{/other_user}",
+			"gists_url": "https://api.github.com/users/michaelmano/gists{/gist_id}",
+			"starred_url": "https://api.github.com/users/michaelmano/starred{/owner}{/repo}",
+			"subscriptions_url": "https://api.github.com/users/michaelmano/subscriptions",
+			"organizations_url": "https://api.github.com/users/michaelmano/orgs",
+			"repos_url": "https://api.github.com/users/michaelmano/repos",
+			"events_url": "https://api.github.com/users/michaelmano/events{/privacy}",
+			"received_events_url": "https://api.github.com/users/michaelmano/received_events",
+			"type": "User",
+			"site_admin": false
+		  },
+		  "labels": [
+  
+		  ],
+		  "state": "open",
+		  "locked": false,
+		  "assignee": null,
+		  "assignees": [
+  
+		  ],
+		  "milestone": null,
+		  "comments": 0,
+		  "created_at": "2017-07-31T01:45:54Z",
+		  "updated_at": "2017-08-11T00:01:36Z",
+		  "closed_at": null,
+		  "body": "So just a question as documentation on both parties is hard to follow.\r\n\r\nI am trying to set my webpack config up to add preserveAspectRatio='none' to my svg.\r\n\r\n```\r\nnew SvgStore.Options({\r\n      svgoOptions: {\r\n        plugins: [\r\n          { removeTitle: true },\r\n          { removeUselessDefs: true },\r\n          { cleanupIDs: { remove: false, minify: true }},\r\n          { addAttributesToSVGElement: { attributes : [\"preserveAspectRatio='none'\", \"test-attribute\"] } }\r\n      ]}\r\n})\r\n```\r\n\r\nHowever this is ignored. any insight would be appreciated."
+		},
+		"comment": {
+		  "url": "https://api.github.com/repos/mrsum/webpack-svgstore-plugin/issues/comments/321704485",
+		  "html_url": "https://github.com/mrsum/webpack-svgstore-plugin/issues/148#issuecomment-321704485",
+		  "issue_url": "https://api.github.com/repos/mrsum/webpack-svgstore-plugin/issues/148",
+		  "id": 321704485,
+		  "user": {
+			"login": "michaelmano",
+			"id": 8263631,
+			"avatar_url": "https://avatars2.githubusercontent.com/u/8263631?v=4",
+			"gravatar_id": "",
+			"url": "https://api.github.com/users/michaelmano",
+			"html_url": "https://github.com/michaelmano",
+			"followers_url": "https://api.github.com/users/michaelmano/followers",
+			"following_url": "https://api.github.com/users/michaelmano/following{/other_user}",
+			"gists_url": "https://api.github.com/users/michaelmano/gists{/gist_id}",
+			"starred_url": "https://api.github.com/users/michaelmano/starred{/owner}{/repo}",
+			"subscriptions_url": "https://api.github.com/users/michaelmano/subscriptions",
+			"organizations_url": "https://api.github.com/users/michaelmano/orgs",
+			"repos_url": "https://api.github.com/users/michaelmano/repos",
+			"events_url": "https://api.github.com/users/michaelmano/events{/privacy}",
+			"received_events_url": "https://api.github.com/users/michaelmano/received_events",
+			"type": "User",
+			"site_admin": false
+		  },
+		  "created_at": "2017-08-11T00:01:36Z",
+		  "updated_at": "2017-08-11T00:01:36Z",
+		  "body": "For anyone who runs into this issue...\r\n\r\nA work around is building your own svg template. below is mine. store it where you wish.\r\n\r\n```\r\nsvg&attributes(svg)\r\n\r\n  mixin parseObject(obj)\r\n    each child in obj\r\n      if child !== null && child.type === 'text'\r\n        | <![CDATA[#{child.data}]]>\r\n      else if child !== null && typeof child.children === 'object'\r\n        | #[#{child.name}&attributes(child.attribs) #[+parseObject(child.children)]]\r\n\r\n  if defs.length\r\n    defs\r\n      each def in defs\r\n        | #[#{def.name}&attributes(def.attribs)  #[+parseObject(def.children)]]\r\n\r\n  each symbol in symbols\r\n    | #[#{symbol.name}&attributes(symbol.attribs)(preserveAspectRatio='none') #[+parseObject(symbol.children)]]\r\n\r\n```\r\n\r\nthen in your webpack config.\r\n\r\n```\r\nplugins: [\r\n    new SvgStore.Options({\r\n      template: './resources/assets/config/svg-template.pug',\r\n      svgoOptions: {\r\n        plugins: [\r\n          { removeTitle: true },\r\n          { removeUselessDefs: true },\r\n          { cleanupIDs: { remove: false, minify: true }}\r\n      ]}\r\n    })\r\n  ],\r\n```\r\n\r\nThis will now use the pug template you have created which adds preserveAspectRatio='none' to all symbols."
+		}
+	  },
+	  "public": true,
+	  "created_at": "2017-08-11T00:01:36Z"
+	},
+	{
+	  "id": "6429997721",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"push_id": 1912948074,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/develop",
+		"head": "f420ee61fd4068b946699df099f0736f578ce376",
+		"before": "5d1e312731f7aba73dc3c8108e233810cefbff6c",
+		"commits": [
+		  {
+			"sha": "f420ee61fd4068b946699df099f0736f578ce376",
+			"author": {
+			  "email": "michael.mano26@gmail.com",
+			  "name": "Michael Mano"
+			},
+			"message": "Multiple changes: usernames, roles and permissions.\nAdds username to the user model.\nAllows the user to log in with username or email.\nSets up roles and permissions.\nSets up seeders and model factories.\nCreates an admin dashboard to which only users with the permission use_dashboard can view.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/f420ee61fd4068b946699df099f0736f578ce376"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T04:08:58Z"
+	},
+	{
+	  "id": "6429995143",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"push_id": 1912947243,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/develop",
+		"head": "5d1e312731f7aba73dc3c8108e233810cefbff6c",
+		"before": "365ef50f487f31edf7af455cad557be2c6dc8ab4",
+		"commits": [
+		  {
+			"sha": "5d1e312731f7aba73dc3c8108e233810cefbff6c",
+			"author": {
+			  "email": "michael.mano26@gmail.com",
+			  "name": "Michael Mano"
+			},
+			"message": "Multiple changes: usernames, roles and permissions.\nAdds username to the user model.\nAllows the user to log in with username or email.\nSets up roles and permissions.\nSets up seeders and model factories.\nCreates an admin dashboard to which only users with the permission use_dashboard can view.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/5d1e312731f7aba73dc3c8108e233810cefbff6c"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T04:08:09Z"
+	},
+	{
+	  "id": "6429982495",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"push_id": 1912943141,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/develop",
+		"head": "365ef50f487f31edf7af455cad557be2c6dc8ab4",
+		"before": "6295d0a23c6d833b3b3125fa2b790b3c4b03faa2",
+		"commits": [
+		  {
+			"sha": "365ef50f487f31edf7af455cad557be2c6dc8ab4",
+			"author": {
+			  "email": "michael.mano26@gmail.com",
+			  "name": "Michael Mano"
+			},
+			"message": "Multiple changes: usernames, roles and permissions.\nAdds username to the user model.\nAllows the user to log in with username or email.\nSets up roles and permissions.\nSets up seeders and model factories.\nCreates an admin dashboard to which only users with the permission use_dashboard can view.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/365ef50f487f31edf7af455cad557be2c6dc8ab4"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T04:04:14Z"
+	},
+	{
+	  "id": "6429962824",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"push_id": 1912936997,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/develop",
+		"head": "6295d0a23c6d833b3b3125fa2b790b3c4b03faa2",
+		"before": "c32b63de56d6d8c6a83ff212e9e7765c39ed4c64",
+		"commits": [
+		  {
+			"sha": "6295d0a23c6d833b3b3125fa2b790b3c4b03faa2",
+			"author": {
+			  "email": "michael.mano26@gmail.com",
+			  "name": "Michael Mano"
+			},
+			"message": "Multiple changes: usernames, roles and permissions.\nAdds username to the user model.\nAllows the user to log in with username or email.\nSets up roles and permissions.\nSets up seeders and model factories.\nCreates an admin dashboard to which only users with the permission use_dashboard can view.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/6295d0a23c6d833b3b3125fa2b790b3c4b03faa2"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T03:58:44Z"
+	},
+	{
+	  "id": "6429903114",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"push_id": 1912918001,
+		"size": 2,
+		"distinct_size": 2,
+		"ref": "refs/heads/develop",
+		"head": "c32b63de56d6d8c6a83ff212e9e7765c39ed4c64",
+		"before": "b6cec9551db6e91f447353b7d16d10983348705d",
+		"commits": [
+		  {
+			"sha": "4d7290cb0564fcd02fddb5c17af475c28653bbd3",
+			"author": {
+			  "email": "michael.mano26@gmail.com",
+			  "name": "Michael Mano"
+			},
+			"message": "Sets up testing to run in memory and adds circleci config (continuous integration).",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/4d7290cb0564fcd02fddb5c17af475c28653bbd3"
+		  },
+		  {
+			"sha": "c32b63de56d6d8c6a83ff212e9e7765c39ed4c64",
+			"author": {
+			  "email": "michael.mano26@gmail.com",
+			  "name": "Michael Mano"
+			},
+			"message": "Multiple changes: usernames, roles and permissions.\nAdds username to the user model.\nAllows the user to log in with username or email.\nSets up roles and permissions.\nSets up seeders and model factories.\nCreates an admin dashboard to which only users with the permission use_dashboard can view.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/c32b63de56d6d8c6a83ff212e9e7765c39ed4c64"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T03:41:10Z"
+	},
+	{
+	  "id": "6429900410",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"push_id": 1912917198,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/develop",
+		"head": "b6cec9551db6e91f447353b7d16d10983348705d",
+		"before": "f698264ee91214b17c2baf8a0a4678c90fdd6520",
+		"commits": [
+		  {
+			"sha": "b6cec9551db6e91f447353b7d16d10983348705d",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "Sets up base laravel repo with amends to resource structure.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/b6cec9551db6e91f447353b7d16d10983348705d"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T03:40:23Z"
+	},
+	{
+	  "id": "6429847758",
+	  "type": "CreateEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"ref": "develop",
+		"ref_type": "branch",
+		"master_branch": "master",
+		"description": null,
+		"pusher_type": "user"
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T03:24:40Z"
+	},
+	{
+	  "id": "6429844640",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"push_id": 1912898670,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/master",
+		"head": "e435329f384aa10d67d9fae2a96eae019acb89b7",
+		"before": "6e2238bddf677cf96c0467ce8df0059f85663bc3",
+		"commits": [
+		  {
+			"sha": "e435329f384aa10d67d9fae2a96eae019acb89b7",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "Sets up base laravel repo with amends to resource structure.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/e435329f384aa10d67d9fae2a96eae019acb89b7"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T03:23:48Z"
+	},
+	{
+	  "id": "6429840637",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"push_id": 1912897296,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/master",
+		"head": "6e2238bddf677cf96c0467ce8df0059f85663bc3",
+		"before": "f698264ee91214b17c2baf8a0a4678c90fdd6520",
+		"commits": [
+		  {
+			"sha": "6e2238bddf677cf96c0467ce8df0059f85663bc3",
+			"author": {
+			  "email": "michael.mano26@gmail.com",
+			  "name": "Michael Mano"
+			},
+			"message": "Revert \"Adds user roles and permissions, creates seeders and sets up testing.\"\n\nThis reverts commit f698264ee91214b17c2baf8a0a4678c90fdd6520.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/6e2238bddf677cf96c0467ce8df0059f85663bc3"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T03:22:34Z"
+	},
+	{
+	  "id": "6429827613",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"push_id": 1912892965,
+		"size": 2,
+		"distinct_size": 2,
+		"ref": "refs/heads/master",
+		"head": "f698264ee91214b17c2baf8a0a4678c90fdd6520",
+		"before": "e8a37da6683803798ec1d8a0b8d09575ed937751",
+		"commits": [
+		  {
+			"sha": "f2123fc3f21f2eff5014fe01f58087e75991a6c5",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "Sets up base laravel repo with amends to resource structure.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/f2123fc3f21f2eff5014fe01f58087e75991a6c5"
+		  },
+		  {
+			"sha": "f698264ee91214b17c2baf8a0a4678c90fdd6520",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "Adds user roles and permissions, creates seeders and sets up testing.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/f698264ee91214b17c2baf8a0a4678c90fdd6520"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T03:18:43Z"
+	},
+	{
+	  "id": "6429813717",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"push_id": 1912888394,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/master",
+		"head": "e8a37da6683803798ec1d8a0b8d09575ed937751",
+		"before": "ffacf744b3e78ce7214c32bf0fdfc894dfd765e7",
+		"commits": [
+		  {
+			"sha": "e8a37da6683803798ec1d8a0b8d09575ed937751",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "Adds user roles and permissions, creates seeders and sets up testing.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/e8a37da6683803798ec1d8a0b8d09575ed937751"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T03:14:41Z"
+	},
+	{
+	  "id": "6429807483",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"push_id": 1912886319,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/master",
+		"head": "ffacf744b3e78ce7214c32bf0fdfc894dfd765e7",
+		"before": "76bfab8401ba515065d9e12b06e05268faecd4d7",
+		"commits": [
+		  {
+			"sha": "ffacf744b3e78ce7214c32bf0fdfc894dfd765e7",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "Allows the user to login with username or email and adds roles.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/ffacf744b3e78ce7214c32bf0fdfc894dfd765e7"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T03:12:51Z"
+	},
+	{
+	  "id": "6429313620",
+	  "type": "ForkEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 99473141,
+		"name": "enzyme/buzuki",
+		"url": "https://api.github.com/repos/enzyme/buzuki"
+	  },
+	  "payload": {
+		"forkee": {
+		  "id": 99865541,
+		  "name": "buzuki",
+		  "full_name": "michaelmano/buzuki",
+		  "owner": {
+			"login": "michaelmano",
+			"id": 8263631,
+			"avatar_url": "https://avatars2.githubusercontent.com/u/8263631?v=4",
+			"gravatar_id": "",
+			"url": "https://api.github.com/users/michaelmano",
+			"html_url": "https://github.com/michaelmano",
+			"followers_url": "https://api.github.com/users/michaelmano/followers",
+			"following_url": "https://api.github.com/users/michaelmano/following{/other_user}",
+			"gists_url": "https://api.github.com/users/michaelmano/gists{/gist_id}",
+			"starred_url": "https://api.github.com/users/michaelmano/starred{/owner}{/repo}",
+			"subscriptions_url": "https://api.github.com/users/michaelmano/subscriptions",
+			"organizations_url": "https://api.github.com/users/michaelmano/orgs",
+			"repos_url": "https://api.github.com/users/michaelmano/repos",
+			"events_url": "https://api.github.com/users/michaelmano/events{/privacy}",
+			"received_events_url": "https://api.github.com/users/michaelmano/received_events",
+			"type": "User",
+			"site_admin": false
+		  },
+		  "private": false,
+		  "html_url": "https://github.com/michaelmano/buzuki",
+		  "description": "A mobile-first, responsive BEM flavoured flexbox css grid system.",
+		  "fork": true,
+		  "url": "https://api.github.com/repos/michaelmano/buzuki",
+		  "forks_url": "https://api.github.com/repos/michaelmano/buzuki/forks",
+		  "keys_url": "https://api.github.com/repos/michaelmano/buzuki/keys{/key_id}",
+		  "collaborators_url": "https://api.github.com/repos/michaelmano/buzuki/collaborators{/collaborator}",
+		  "teams_url": "https://api.github.com/repos/michaelmano/buzuki/teams",
+		  "hooks_url": "https://api.github.com/repos/michaelmano/buzuki/hooks",
+		  "issue_events_url": "https://api.github.com/repos/michaelmano/buzuki/issues/events{/number}",
+		  "events_url": "https://api.github.com/repos/michaelmano/buzuki/events",
+		  "assignees_url": "https://api.github.com/repos/michaelmano/buzuki/assignees{/user}",
+		  "branches_url": "https://api.github.com/repos/michaelmano/buzuki/branches{/branch}",
+		  "tags_url": "https://api.github.com/repos/michaelmano/buzuki/tags",
+		  "blobs_url": "https://api.github.com/repos/michaelmano/buzuki/git/blobs{/sha}",
+		  "git_tags_url": "https://api.github.com/repos/michaelmano/buzuki/git/tags{/sha}",
+		  "git_refs_url": "https://api.github.com/repos/michaelmano/buzuki/git/refs{/sha}",
+		  "trees_url": "https://api.github.com/repos/michaelmano/buzuki/git/trees{/sha}",
+		  "statuses_url": "https://api.github.com/repos/michaelmano/buzuki/statuses/{sha}",
+		  "languages_url": "https://api.github.com/repos/michaelmano/buzuki/languages",
+		  "stargazers_url": "https://api.github.com/repos/michaelmano/buzuki/stargazers",
+		  "contributors_url": "https://api.github.com/repos/michaelmano/buzuki/contributors",
+		  "subscribers_url": "https://api.github.com/repos/michaelmano/buzuki/subscribers",
+		  "subscription_url": "https://api.github.com/repos/michaelmano/buzuki/subscription",
+		  "commits_url": "https://api.github.com/repos/michaelmano/buzuki/commits{/sha}",
+		  "git_commits_url": "https://api.github.com/repos/michaelmano/buzuki/git/commits{/sha}",
+		  "comments_url": "https://api.github.com/repos/michaelmano/buzuki/comments{/number}",
+		  "issue_comment_url": "https://api.github.com/repos/michaelmano/buzuki/issues/comments{/number}",
+		  "contents_url": "https://api.github.com/repos/michaelmano/buzuki/contents/{+path}",
+		  "compare_url": "https://api.github.com/repos/michaelmano/buzuki/compare/{base}...{head}",
+		  "merges_url": "https://api.github.com/repos/michaelmano/buzuki/merges",
+		  "archive_url": "https://api.github.com/repos/michaelmano/buzuki/{archive_format}{/ref}",
+		  "downloads_url": "https://api.github.com/repos/michaelmano/buzuki/downloads",
+		  "issues_url": "https://api.github.com/repos/michaelmano/buzuki/issues{/number}",
+		  "pulls_url": "https://api.github.com/repos/michaelmano/buzuki/pulls{/number}",
+		  "milestones_url": "https://api.github.com/repos/michaelmano/buzuki/milestones{/number}",
+		  "notifications_url": "https://api.github.com/repos/michaelmano/buzuki/notifications{?since,all,participating}",
+		  "labels_url": "https://api.github.com/repos/michaelmano/buzuki/labels{/name}",
+		  "releases_url": "https://api.github.com/repos/michaelmano/buzuki/releases{/id}",
+		  "deployments_url": "https://api.github.com/repos/michaelmano/buzuki/deployments",
+		  "created_at": "2017-08-10T00:57:41Z",
+		  "updated_at": "2017-08-06T22:37:58Z",
+		  "pushed_at": "2017-08-09T09:50:00Z",
+		  "git_url": "git://github.com/michaelmano/buzuki.git",
+		  "ssh_url": "git@github.com:michaelmano/buzuki.git",
+		  "clone_url": "https://github.com/michaelmano/buzuki.git",
+		  "svn_url": "https://github.com/michaelmano/buzuki",
+		  "homepage": "https://buzuki.pixls.com.au/",
+		  "size": 2021,
+		  "stargazers_count": 0,
+		  "watchers_count": 0,
+		  "language": null,
+		  "has_issues": false,
+		  "has_projects": true,
+		  "has_downloads": true,
+		  "has_wiki": false,
+		  "has_pages": false,
+		  "forks_count": 0,
+		  "mirror_url": null,
+		  "open_issues_count": 0,
+		  "forks": 0,
+		  "open_issues": 0,
+		  "watchers": 0,
+		  "default_branch": "master",
+		  "public": true
+		}
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T00:57:41Z",
+	  "org": {
+		"id": 16175235,
+		"login": "enzyme",
+		"gravatar_id": "",
+		"url": "https://api.github.com/orgs/enzyme",
+		"avatar_url": "https://avatars.githubusercontent.com/u/16175235?"
+	  }
+	},
+	{
+	  "id": "6429285199",
+	  "type": "CreateEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 99650583,
+		"name": "ajutoare/ajutoare",
+		"url": "https://api.github.com/repos/ajutoare/ajutoare"
+	  },
+	  "payload": {
+		"ref": "develop",
+		"ref_type": "branch",
+		"master_branch": "master",
+		"description": "A lightweight javascript library.",
+		"pusher_type": "user"
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T00:50:12Z",
+	  "org": {
+		"id": 30741920,
+		"login": "ajutoare",
+		"gravatar_id": "",
+		"url": "https://api.github.com/orgs/ajutoare",
+		"avatar_url": "https://avatars.githubusercontent.com/u/30741920?"
+	  }
+	},
+	{
+	  "id": "6429277833",
+	  "type": "ReleaseEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 99650583,
+		"name": "ajutoare/ajutoare",
+		"url": "https://api.github.com/repos/ajutoare/ajutoare"
+	  },
+	  "payload": {
+		"action": "published",
+		"release": {
+		  "url": "https://api.github.com/repos/ajutoare/ajutoare/releases/7341283",
+		  "assets_url": "https://api.github.com/repos/ajutoare/ajutoare/releases/7341283/assets",
+		  "upload_url": "https://uploads.github.com/repos/ajutoare/ajutoare/releases/7341283/assets{?name,label}",
+		  "html_url": "https://github.com/ajutoare/ajutoare/releases/tag/v1.1.2",
+		  "id": 7341283,
+		  "tag_name": "v1.1.2",
+		  "target_commitish": "master",
+		  "name": "Version 1.1.2",
+		  "draft": false,
+		  "author": {
+			"login": "michaelmano",
+			"id": 8263631,
+			"avatar_url": "https://avatars2.githubusercontent.com/u/8263631?v=4",
+			"gravatar_id": "",
+			"url": "https://api.github.com/users/michaelmano",
+			"html_url": "https://github.com/michaelmano",
+			"followers_url": "https://api.github.com/users/michaelmano/followers",
+			"following_url": "https://api.github.com/users/michaelmano/following{/other_user}",
+			"gists_url": "https://api.github.com/users/michaelmano/gists{/gist_id}",
+			"starred_url": "https://api.github.com/users/michaelmano/starred{/owner}{/repo}",
+			"subscriptions_url": "https://api.github.com/users/michaelmano/subscriptions",
+			"organizations_url": "https://api.github.com/users/michaelmano/orgs",
+			"repos_url": "https://api.github.com/users/michaelmano/repos",
+			"events_url": "https://api.github.com/users/michaelmano/events{/privacy}",
+			"received_events_url": "https://api.github.com/users/michaelmano/received_events",
+			"type": "User",
+			"site_admin": false
+		  },
+		  "prerelease": false,
+		  "created_at": "2017-08-10T00:46:00Z",
+		  "published_at": "2017-08-10T00:48:15Z",
+		  "assets": [
+  
+		  ],
+		  "tarball_url": "https://api.github.com/repos/ajutoare/ajutoare/tarball/v1.1.2",
+		  "zipball_url": "https://api.github.com/repos/ajutoare/ajutoare/zipball/v1.1.2",
+		  "body": "This is the first official release."
+		}
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T00:48:15Z",
+	  "org": {
+		"id": 30741920,
+		"login": "ajutoare",
+		"gravatar_id": "",
+		"url": "https://api.github.com/orgs/ajutoare",
+		"avatar_url": "https://avatars.githubusercontent.com/u/30741920?"
+	  }
+	},
+	{
+	  "id": "6429275671",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 99650583,
+		"name": "ajutoare/ajutoare",
+		"url": "https://api.github.com/repos/ajutoare/ajutoare"
+	  },
+	  "payload": {
+		"push_id": 1912717522,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/master",
+		"head": "b3b20587a1b8fbddb59b833ee43776c630a429f0",
+		"before": "823cc1745d1ab7fc45deee87f89561240f61bd50",
+		"commits": [
+		  {
+			"sha": "b3b20587a1b8fbddb59b833ee43776c630a429f0",
+			"author": {
+			  "email": "michael.mano26@gmail.com",
+			  "name": "Michael Mano"
+			},
+			"message": "1.1.2",
+			"distinct": true,
+			"url": "https://api.github.com/repos/ajutoare/ajutoare/commits/b3b20587a1b8fbddb59b833ee43776c630a429f0"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T00:47:40Z",
+	  "org": {
+		"id": 30741920,
+		"login": "ajutoare",
+		"gravatar_id": "",
+		"url": "https://api.github.com/orgs/ajutoare",
+		"avatar_url": "https://avatars.githubusercontent.com/u/30741920?"
+	  }
+	},
+	{
+	  "id": "6429252818",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 99650583,
+		"name": "ajutoare/ajutoare",
+		"url": "https://api.github.com/repos/ajutoare/ajutoare"
+	  },
+	  "payload": {
+		"push_id": 1912711043,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/master",
+		"head": "823cc1745d1ab7fc45deee87f89561240f61bd50",
+		"before": "624922f500fd348a2513f93ef521367b175b0874",
+		"commits": [
+		  {
+			"sha": "823cc1745d1ab7fc45deee87f89561240f61bd50",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "Adds functions and updates readme.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/ajutoare/ajutoare/commits/823cc1745d1ab7fc45deee87f89561240f61bd50"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-10T00:41:52Z",
+	  "org": {
+		"id": 30741920,
+		"login": "ajutoare",
+		"gravatar_id": "",
+		"url": "https://api.github.com/orgs/ajutoare",
+		"avatar_url": "https://avatars.githubusercontent.com/u/30741920?"
+	  }
+	},
+	{
+	  "id": "6420154088",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/laramin",
+		"url": "https://api.github.com/repos/michaelmano/laramin"
+	  },
+	  "payload": {
+		"push_id": 1909999812,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/master",
+		"head": "76bfab8401ba515065d9e12b06e05268faecd4d7",
+		"before": "3973a82a39630110bf030526aaec5748e514681d",
+		"commits": [
+		  {
+			"sha": "76bfab8401ba515065d9e12b06e05268faecd4d7",
+			"author": {
+			  "email": "michael.mano26@gmail.com",
+			  "name": "Michael Mano"
+			},
+			"message": "Sets up circleci and test settings",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/laramin/commits/76bfab8401ba515065d9e12b06e05268faecd4d7"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-08T23:10:33Z"
+	},
+	{
+	  "id": "6420051559",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/admin-panel",
+		"url": "https://api.github.com/repos/michaelmano/admin-panel"
+	  },
+	  "payload": {
+		"push_id": 1909971044,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/master",
+		"head": "3973a82a39630110bf030526aaec5748e514681d",
+		"before": "cb34c5c4a53c8f26ba6abe0877fe3bcfb8bb9b35",
+		"commits": [
+		  {
+			"sha": "3973a82a39630110bf030526aaec5748e514681d",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "Allows the user to login with username or email and adds roles.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/admin-panel/commits/3973a82a39630110bf030526aaec5748e514681d"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-08T22:50:39Z"
+	},
+	{
+	  "id": "6420044663",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 97056204,
+		"name": "michaelmano/admin-panel",
+		"url": "https://api.github.com/repos/michaelmano/admin-panel"
+	  },
+	  "payload": {
+		"push_id": 1909969264,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/master",
+		"head": "cb34c5c4a53c8f26ba6abe0877fe3bcfb8bb9b35",
+		"before": "f3d5d817ff5bc0ffc9309b4494557a635bc7bc75",
+		"commits": [
+		  {
+			"sha": "cb34c5c4a53c8f26ba6abe0877fe3bcfb8bb9b35",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "Allows the user to login with username or email and adds roles.",
+			"distinct": true,
+			"url": "https://api.github.com/repos/michaelmano/admin-panel/commits/cb34c5c4a53c8f26ba6abe0877fe3bcfb8bb9b35"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-08T22:49:24Z"
+	},
+	{
+	  "id": "6412742572",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 99650583,
+		"name": "ajutoare/ajutoare",
+		"url": "https://api.github.com/repos/ajutoare/ajutoare"
+	  },
+	  "payload": {
+		"push_id": 1907791733,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/master",
+		"head": "624922f500fd348a2513f93ef521367b175b0874",
+		"before": "bb0dfc1c4b98b2799744a15d96800226a6878010",
+		"commits": [
+		  {
+			"sha": "624922f500fd348a2513f93ef521367b175b0874",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "force of circleci run",
+			"distinct": true,
+			"url": "https://api.github.com/repos/ajutoare/ajutoare/commits/624922f500fd348a2513f93ef521367b175b0874"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-08T04:50:19Z",
+	  "org": {
+		"id": 30741920,
+		"login": "ajutoare",
+		"gravatar_id": "",
+		"url": "https://api.github.com/orgs/ajutoare",
+		"avatar_url": "https://avatars.githubusercontent.com/u/30741920?"
+	  }
+	},
+	{
+	  "id": "6412707893",
+	  "type": "CreateEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 99650583,
+		"name": "ajutoare/ajutoare",
+		"url": "https://api.github.com/repos/ajutoare/ajutoare"
+	  },
+	  "payload": {
+		"ref": "master",
+		"ref_type": "branch",
+		"master_branch": "master",
+		"description": "A lightweight javascript library.",
+		"pusher_type": "user"
+	  },
+	  "public": true,
+	  "created_at": "2017-08-08T04:38:43Z",
+	  "org": {
+		"id": 30741920,
+		"login": "ajutoare",
+		"gravatar_id": "",
+		"url": "https://api.github.com/orgs/ajutoare",
+		"avatar_url": "https://avatars.githubusercontent.com/u/30741920?"
+	  }
+	},
+	{
+	  "id": "6412707046",
+	  "type": "CreateEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 99650583,
+		"name": "ajutoare/ajutoare",
+		"url": "https://api.github.com/repos/ajutoare/ajutoare"
+	  },
+	  "payload": {
+		"ref": null,
+		"ref_type": "repository",
+		"master_branch": "master",
+		"description": "A lightweight javascript library.",
+		"pusher_type": "user"
+	  },
+	  "public": true,
+	  "created_at": "2017-08-08T04:38:26Z",
+	  "org": {
+		"id": 30741920,
+		"login": "ajutoare",
+		"gravatar_id": "",
+		"url": "https://api.github.com/orgs/ajutoare",
+		"avatar_url": "https://avatars.githubusercontent.com/u/30741920?"
+	  }
+	},
+	{
+	  "id": "6412504003",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 99486968,
+		"name": "ajutoare/ajutoare",
+		"url": "https://api.github.com/repos/ajutoare/ajutoare"
+	  },
+	  "payload": {
+		"push_id": 1907713245,
+		"size": 2,
+		"distinct_size": 2,
+		"ref": "refs/heads/master",
+		"head": "b3168379b73174488cfe340b5f83b50758f7d7dd",
+		"before": "b3bb386f005cc2ce974c7b720e5730992677aabc",
+		"commits": [
+		  {
+			"sha": "bc6dd425e4d4267f6bfd3b7bbb54c3746dd02dc8",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "1.0.2",
+			"distinct": true,
+			"url": "https://api.github.com/repos/ajutoare/ajutoare/commits/bc6dd425e4d4267f6bfd3b7bbb54c3746dd02dc8"
+		  },
+		  {
+			"sha": "b3168379b73174488cfe340b5f83b50758f7d7dd",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "Removes example for now",
+			"distinct": true,
+			"url": "https://api.github.com/repos/ajutoare/ajutoare/commits/b3168379b73174488cfe340b5f83b50758f7d7dd"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-08T03:35:23Z",
+	  "org": {
+		"id": 30741920,
+		"login": "ajutoare",
+		"gravatar_id": "",
+		"url": "https://api.github.com/orgs/ajutoare",
+		"avatar_url": "https://avatars.githubusercontent.com/u/30741920?"
+	  }
+	},
+	{
+	  "id": "6412467349",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 99486968,
+		"name": "ajutoare/ajutoare",
+		"url": "https://api.github.com/repos/ajutoare/ajutoare"
+	  },
+	  "payload": {
+		"push_id": 1907700787,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/master",
+		"head": "b3bb386f005cc2ce974c7b720e5730992677aabc",
+		"before": "3fe78c13e51599b0aea086818ec154caa569bae7",
+		"commits": [
+		  {
+			"sha": "b3bb386f005cc2ce974c7b720e5730992677aabc",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "Updates the way functions are exported",
+			"distinct": true,
+			"url": "https://api.github.com/repos/ajutoare/ajutoare/commits/b3bb386f005cc2ce974c7b720e5730992677aabc"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-08T03:24:25Z",
+	  "org": {
+		"id": 30741920,
+		"login": "ajutoare",
+		"gravatar_id": "",
+		"url": "https://api.github.com/orgs/ajutoare",
+		"avatar_url": "https://avatars.githubusercontent.com/u/30741920?"
+	  }
+	},
+	{
+	  "id": "6411975916",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 99486968,
+		"name": "ajutoare/ajutoare",
+		"url": "https://api.github.com/repos/ajutoare/ajutoare"
+	  },
+	  "payload": {
+		"push_id": 1907545027,
+		"size": 2,
+		"distinct_size": 2,
+		"ref": "refs/heads/master",
+		"head": "3fe78c13e51599b0aea086818ec154caa569bae7",
+		"before": "081251d7d87b9264d56124128a43b7bd15d02715",
+		"commits": [
+		  {
+			"sha": "cdfc0a7a28627cec047ba438505ec940d7b01591",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "1.0.1",
+			"distinct": true,
+			"url": "https://api.github.com/repos/ajutoare/ajutoare/commits/cdfc0a7a28627cec047ba438505ec940d7b01591"
+		  },
+		  {
+			"sha": "3fe78c13e51599b0aea086818ec154caa569bae7",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "Update to documentation",
+			"distinct": true,
+			"url": "https://api.github.com/repos/ajutoare/ajutoare/commits/3fe78c13e51599b0aea086818ec154caa569bae7"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-08T01:10:03Z",
+	  "org": {
+		"id": 30741920,
+		"login": "ajutoare",
+		"gravatar_id": "",
+		"url": "https://api.github.com/orgs/ajutoare",
+		"avatar_url": "https://avatars.githubusercontent.com/u/30741920?"
+	  }
+	},
+	{
+	  "id": "6411846206",
+	  "type": "PushEvent",
+	  "actor": {
+		"id": 8263631,
+		"login": "michaelmano",
+		"display_login": "michaelmano",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/michaelmano",
+		"avatar_url": "https://avatars.githubusercontent.com/u/8263631?"
+	  },
+	  "repo": {
+		"id": 99486968,
+		"name": "ajutoare/ajutoare",
+		"url": "https://api.github.com/repos/ajutoare/ajutoare"
+	  },
+	  "payload": {
+		"push_id": 1907507377,
+		"size": 1,
+		"distinct_size": 1,
+		"ref": "refs/heads/master",
+		"head": "081251d7d87b9264d56124128a43b7bd15d02715",
+		"before": "359384f35fc34043496cc48eee7bbf94c715e54d",
+		"commits": [
+		  {
+			"sha": "081251d7d87b9264d56124128a43b7bd15d02715",
+			"author": {
+			  "email": "mmano@bcm.com.au",
+			  "name": "Michael Mano"
+			},
+			"message": "Adds debounce function and fadeIn function with tests",
+			"distinct": true,
+			"url": "https://api.github.com/repos/ajutoare/ajutoare/commits/081251d7d87b9264d56124128a43b7bd15d02715"
+		  }
+		]
+	  },
+	  "public": true,
+	  "created_at": "2017-08-08T00:35:26Z",
+	  "org": {
+		"id": 30741920,
+		"login": "ajutoare",
+		"gravatar_id": "",
+		"url": "https://api.github.com/orgs/ajutoare",
+		"avatar_url": "https://avatars.githubusercontent.com/u/30741920?"
+	  }
+	}
+  ]
